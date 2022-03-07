@@ -1,2 +1,5 @@
 # Java Shopping Cart
- This is a barebones GUI that contains a shopping cart of groceries that you can add and remove from a running total. You can also choose to have discounts on several items.
+
+Directions:
+1. Pull the code and open your preference of IDE.
+2. Enter the "Shopping-Main.java" file and run the code.
