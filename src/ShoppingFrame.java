@@ -25,9 +25,9 @@ public class ShoppingFrame extends JFrame {
         total.setEnabled(false);
         total.setDisabledTextColor(Color.BLACK);
         JPanel p = new JPanel();
-        p.setBackground(Color.blue);
+        p.setBackground(Color.gray);
         JLabel l = new JLabel("order total");
-        l.setForeground(Color.YELLOW);
+        l.setForeground(Color.white);
         p.add(l);
         p.add(total);
         add(p, BorderLayout.NORTH);
@@ -39,6 +39,8 @@ public class ShoppingFrame extends JFrame {
 
         p = new JPanel();
        add(makeCheckBoxPanel(), BorderLayout.SOUTH);
+       add(fundscheck(), BorderLayout.EAST);
+
 
         // adjust size to just fit
         pack();
@@ -47,7 +49,7 @@ public class ShoppingFrame extends JFrame {
     // Sets up the "discount" checkbox for the frame
     private JPanel makeCheckBoxPanel() {
         JPanel p = new JPanel();
-        p.setBackground(Color.blue);
+        p.setBackground(Color.gray);
         final JCheckBox cb = new JCheckBox("qualify for discount");
         p.add(cb);
         cb.addActionListener(new ActionListener() {
@@ -59,11 +61,25 @@ public class ShoppingFrame extends JFrame {
         return p;
     }
 
+    private JPanel fundscheck() {
+        JPanel p = new JPanel();
+        p.setBackground(Color.gray);
+        final JCheckBox cb = new JCheckBox("Verify your funds");
+        p.add(cb);
+        cb.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                //items.setDiscount(cb.isSelected());
+                //updateTotal();
+            }
+        });
+        return p;
+    }
+
     // adds a product to the panel, including a textfield for user input of
     // the quantity
     private void addItem(final Item product, JPanel p) {
         JPanel sub = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        sub.setBackground(new Color(0, 180, 0));
+        sub.setBackground(new Color(6, 135, 174));
         final JTextField quantity = new JTextField(3);
         quantity.setHorizontalAlignment(SwingConstants.CENTER);
         quantity.addActionListener(new ActionListener() {

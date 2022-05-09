@@ -20,6 +20,7 @@ public class Item {
 	private double price;
 	private int bulkQuantity;
 	private double bulkPrice;
+	private String available;
 
 	/**
 	 * initializes a product and price equal to the input of the user's
@@ -28,12 +29,13 @@ public class Item {
 	 * @param name  name given to product.
 	 * @param price price of specified product.
 	 */
-	public Item(String name, double price) {
+	public Item(String name, double price, String available) {
 		if (price < 0) {
 			throw new IllegalArgumentException("Price cannot be negative!");
 		} else {
 			this.name = name;
 			this.price = price;
+			this.available = available;
 		}
 	}
 
@@ -98,7 +100,7 @@ public class Item {
 		if (bulkPrice > 0) {
 			return name + ", " + text + " (" + bulkQuantity + " for $" + bulkPrice + ")";
 		} else {
-			return name + ", " + text;
+			return name + " //  Price: " + text + "  //  Is it available:" + available;
 		}
 	}
 
