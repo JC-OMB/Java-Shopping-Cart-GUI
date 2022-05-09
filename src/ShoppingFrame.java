@@ -1,9 +1,3 @@
-// Stuart Reges
-// 3/28/07
-//
-// Class ShoppingFrame provides the user interface for a simple shopping
-// program.
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

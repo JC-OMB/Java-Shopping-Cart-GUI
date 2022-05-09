@@ -8,8 +8,6 @@
  * Call to toString method will print out the product name, price, and quantity
  * including its bulk price and bulk quantity as well.
  * Call to getName method will return the name of the product.
- * @author Alex Furmuzan
- * @version 1 September 2019
  */
 
 import java.text.*;

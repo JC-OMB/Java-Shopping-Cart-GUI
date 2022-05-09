@@ -1,4 +1,3 @@
-
 public class ItemOrder {
 	private Item item; //Initializes item to receive a name and price.
 	private int quantity; 
