@@ -1,4 +1,3 @@
-
 /**
  * A class representing a shopping cart of items. Upon creation, constructor initializes the name
  * and price of a product accounting for bulk prices/quantities as well.

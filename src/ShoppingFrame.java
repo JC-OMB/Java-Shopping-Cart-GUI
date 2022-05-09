@@ -58,7 +58,7 @@ public class ShoppingFrame extends JFrame {
     private JPanel fundscheck() {
         JPanel p = new JPanel();
         p.setBackground(Color.gray);
-        final JCheckBox cb = new JCheckBox("Verify your funds");
+        final JButton cb = new JButton("Verify your funds");
         p.add(cb);
         cb.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
