@@ -26,6 +26,20 @@ public class ShoppingFrame extends JFrame {
         p.add(total);
         add(p, BorderLayout.NORTH);
 
+        //Wallet
+        // set up text field with order total
+        total = new JTextField("$0.00", 12);
+        total.setEditable(false);
+        total.setEnabled(false);
+        total.setDisabledTextColor(Color.BLACK);
+        JPanel panel = new JPanel();
+        panel.setBackground(Color.gray);
+        JLabel wallet = new JLabel("your wallet");
+        wallet.setForeground(Color.white);
+        panel.add(wallet);
+        panel.add(total);
+        add(panel, BorderLayout.WEST);
+
         p = new JPanel(new GridLayout(products.size(), 1));
         for (int i = 0; i < products.size(); i++)
             addItem(products.get(i), p);
