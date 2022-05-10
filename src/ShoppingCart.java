@@ -8,7 +8,7 @@ public class ShoppingCart {
 	private boolean replaceItem; //boolean variable to determine if item must be added or replaced.
 
 	public ShoppingCart() {
-		list.clear(); // clears shopping cart when new constructor is called.
+		list.clear(); 
 	}
 
 	public void add(ItemOrder item) { //adds/modifies items to the ArrayList of items ordered.
