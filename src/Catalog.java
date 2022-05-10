@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Catalog {
 
-	private ArrayList<Item> list = new ArrayList<>(); //ArrayList of items in the catalog.
+	private ArrayList<Item> list = new ArrayList<>(); //ArrayList of items in the catalog
 	private String catalogName; //Name of the given catalog
 	
 	public Catalog(String catalogName) {
